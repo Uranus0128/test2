@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Event Participants</title>
+    <link rel="stylesheet" href="view_event.css">
+</head>
+<body>
+
+    <div class='back-button-container'>
+        <a href='index.html' class='back-button'>Back to Home</a>
+    </div>
+
+    <h2>Select Event to View Participants</h2>
+
+    <div class='filter-form'>
+        <form action='view_event.php' method='POST'>
+            <label for='acara'>Acara:</label>
+            <select name='acara' id='acara'>
+                <option value=''>All</option>
+                <option value="60m">60m</option>
+                <option value="200m">200m</option>
+                <option value="400m">400m</option>
+                <option value="800m">800m</option>
+                <option value="1500m">1500m</option>
+                <option value="Lompat Jauh">Lompat Jauh</option>
+                <option value="Lompat Tinggi">Lompat Tinggi</option>
+                <option value="Lontar Peluru">Lontar Peluru</option>
+                <option value="Lempar Cakera">Lempar Cakera</option>
+                <option value="Rejam Lembing">Rejam Lembing</option>
+                <option value="4x100m">4x100m</option>
+                <option value="4x400m">4x400m</option>
+            </select>
+
+            <label for='kategori'>Kategori:</label>
+            <select name='kategori' id='kategori'>
+                <option value=''>All</option>
+                <option value='L13'>L13</option>
+                <option value='L15'>L15</option>
+                <option value='L18'>L18</option>
+                <option value='P13'>P13</option>
+                <option value='P15'>P15</option>
+                <option value='P18'>P18</option> 
+            </select>
+
+            <input type='submit' value='Filter'>
+        </form>
+    </div>
+</body>
+</html>
